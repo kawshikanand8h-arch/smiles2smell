@@ -20,7 +20,6 @@
 - 🪟 **Desktop GUI (`odor_ui.py`)**: Single-window Tkinter desktop app featuring live RDKit preview while typing SMILES strings, background model loading, and instant results.
 - ⚡ **Headless CLI (`predict_smiles.py`)**: Fast command-line inference tool designed for batch pipelines and remote server/SSH workflows.
 - 📓 **End-to-End Notebooks**: Step-by-step Jupyter notebooks covering environment verification, exploratory data analysis, and multi-label stratified training achieving **~0.875 ROC-AUC**.
-- 📡 **E-Nose Hardware Pipeline (Part B)**: Guide and workflow for interfacing physical gas sensors (Bosch BME688 + Raspberry Pi) with BME AI-Studio.
 
 ---
 
@@ -129,17 +128,6 @@ Trained using a Message Passing Neural Network with edge featurization and a mul
 | Single Model (baseline) | 5 | 0.806 | 0.806 | ~30s |
 | **Single Model (this run)** | **150** | **0.880** | **0.875** | **12m 30s (RTX 4050)** |
 | 10-Model Ensemble (paper) | 150 | — | ~0.890 | — |
-
----
-
-## 📡 Part B: Physical Electronic Nose (Optional)
-
-The repository also includes notes for integrating physical odor sensors:
-- **Hardware**: Bosch BME688 8-in-1 environmental gas sensor breakout + Raspberry Pi.
-- **Workflow**:
-  1. Record gas resistance and temperature/humidity profiles in a sealed container using the Raspberry Pi.
-  2. Train gas classification models in Bosch **BME AI-Studio**.
-  3. Deploy classification configs directly to the sensor firmware.
 
 ---
 
